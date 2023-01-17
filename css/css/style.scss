@@ -1,0 +1,480 @@
+
+/*font-family: 'DM Serif Display', serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Zen Antique', serif;*/
+
+section.company_intro:nth-of-type(1) {
+  background-image: url('../images/bg_intro_01.jpg');
+}
+
+$serif : 'Zen Antique', serif;
+$sans-serif : 'PT Sans', serif;
+$notosans : 'Noto Sans KR', sans-serif;
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'PT Sans', 'Noto Sans KR', sans-serif;
+}
+.menu_bar {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+
+  ul.menu_list_wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    li.menu {
+      font-family: 'PT Sans', sans-serif;
+      list-style: none;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing: 0.03em;
+
+      a {
+        color: #fbfbfb;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+section.slide {
+  position: relative;
+  height: 950px;
+
+  .prev-btn {
+    display: none;
+  }
+  .next-btn {
+    display: none;
+  }
+  .slide-track {
+    position: relative;
+
+    .slide-item {
+      position: absolute;
+      opacity: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+    .showing {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+}
+
+section.cakes_wrap {
+  background-image: url('../images/bg_cakes.jpg');
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+  h5{
+    font-size: 18px;
+    color: #666;
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 36px;
+    font-family: $serif;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+
+  .cakes_center {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+
+    .cake-item {
+
+
+    }
+    .cake-item-right-bottom {
+      display: flex;
+      gap: 20px;
+      margin-top:20px;
+    }
+
+  }
+}
+
+section.beverage_wrap {
+  background-image: url('../images/bg_beverages.jpg');
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+  h5{
+    font-size: 18px;
+    color: #999;
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 36px;
+    color: #fff;
+    font-family: $serif;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .beverage_center {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    gap: 19px;
+    position: relative;
+    .beverage-item {
+      position: relative;
+      a {
+        img {
+          position: relative;
+        }
+        .beverage-item-text {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          text-align: right;
+          padding-right: 20px;
+          padding-bottom: 20px;
+          padding-top: 60px;
+          box-sizing: border-box;
+          background: linear-gradient(0deg, #fff, transparent);
+        }
+        h3 {
+          font-family: $serif;
+          font-size: 18px;
+          color: #333;
+        }
+        h5 {
+          font-family: $notosans;
+          font-size: 14px;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+section.sns_wrap {
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  .sns_center {
+    max-width: 1200px;
+    margin: auto;
+
+    h5 {
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-image: url('../images/bg_footer.jpg');
+
+  .footer_center {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    .footer-logo {
+      flex: 25%;
+      img {
+      }
+    }
+
+    .company-information {
+      flex: 25%;
+      p {
+        font-family: $notosans;
+        color: #999;
+        font-weight: 300;
+        word-break: keep-all;
+        line-height: 1.8;
+        span {
+          color: #fff;
+          font-weight: 500;
+        }
+      }
+    }
+    .footer-index {
+      flex: 50%;
+      display: flex;
+      ul {
+        flex: 1;
+        h5 {
+          color: #fff;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        li {
+          font-family: $notosans;
+          font-weight: 300;
+          a {
+            color: #ababab;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    max-width: 1200px;
+    margin: auto;
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+  }
+}
+
+/* themarbletable.html */
+.breadcrumbs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-attachment: fixed;
+  width: 100%;
+  height: 960px;
+  background-position: center bottom;
+  background-size: cover;
+
+  h3 {
+    font-family: $serif;
+    position: relative;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-shadow: 0 0 4px rgb(0,0,0);
+    text-transform: uppercase;
+  }
+
+  h5 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 0 0 4px black;
+  }
+}
+
+.breadcrumbs.the_marble_table {
+    background-image: url(../images/bg_themarbletable_breadcrumb.jpg);
+}
+.breadcrumbs.beverage {
+    background-image: url(../images/bg_beverage_breadcrumb.jpg);
+}
+.breadcrumbs.dessert {
+    background-image: url(../images/bg_dessert_breadcrumb.jpg);
+}
+
+section.company_intro {
+  background-attachment: fixed;
+  position: relative;
+  padding-bottom: 350px;
+
+  .company_intro_wrap {
+    max-width: 1230px;
+    margin: auto;
+    margin-top: 285px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+
+    .divide-in-two {
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      .intro_text::before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        height: 330px;
+        z-index: -1;
+      }
+      .intro_text{
+        padding-bottom: 83px;
+
+        h3 {
+          display: inline-block;
+            font-family: 'DM Serif Display', serif;
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 0.06em;
+          }
+          h3::after {
+            display: block;
+            content: '';
+            width: 100%;
+            height: 10px;
+            background-color: #000;
+            margin-top: 20px;
+            margin-bottom: 40px;
+          }
+        p {
+          color: #333;
+          font-weight: 300;
+        }
+      }
+      .intro_img {
+
+      }
+
+      .color-card {
+        margin-top: 20px;
+        height: 365px;
+        h2 {
+          font-family: $serif;
+          color: #fff;
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}
+
+
+section.company_intro:nth-of-type(odd) {
+  .company_intro_wrap {
+    flex-flow: row-reverse;
+  }
+
+}
+
+
+
+section.company_intro:nth-of-type(2) {
+  background-image: url('../images/bg_intro_02.jpg');
+  .color-card {
+    background-color: #000;
+  }
+}
+
+section.company_intro:nth-of-type(3) {
+  background-image: url('../images/bg_intro_03.jpg');
+  .color-card {
+    background-color: #e19b03;
+  }
+}
+
+/* beverage.html */
+section.section-beverage {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  background: url('../images/bg_beverage.jpg');
+  .beverage_center {
+    max-width: 1240px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
+    h5 {
+      font-weight: 300;
+      color: #333;
+      font-size: 18px;
+      span {
+        font-family: $serif;
+        letter-spacing: 0.02em;
+      }
+    }
+    h3 {
+      font-family: $serif;
+      font-size: 24px;
+    }
+    .check-box {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 0;
+      padding-right: 0;
+      border-top: 1px solid #b5b5b5;
+      border-bottom: 2px solid #000;
+      text-transform: uppercase;
+      li {
+        padding: 10px 12px;
+
+        input[type=checkbox]{
+          margin-right: 2px;
+          accent-color: #000;
+        }
+        input[type=checkbox] + label {
+          padding: 2px 6px;
+        }
+        input[type=checkbox]:checked + label {
+          background: #000;
+          color: #fff;
+        }
+      }
+      }
+    .beverage-items-wrap {
+      ul {
+        padding: 0;
+        li.beverage-items-cate {
+          margin-top: 110px;
+        }
+        li.beverage-items-cate {
+
+          div.beverage-item-cate-name {
+            h5 {
+              text-transform: uppercase;
+              display: inline-block;
+              border-bottom: 4px solid #cf8807;
+              padding: 4px;
+              font-size: 20px;
+            }
+          }
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            li {
+              background: #000;
+              img {
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
